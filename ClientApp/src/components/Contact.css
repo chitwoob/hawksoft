@@ -1,0 +1,14 @@
+.tableBorder > div{
+  border-style: solid;
+}
+
+.tablePad{
+  padding: 10px;
+}
+
+.contactDeleteBtnAlign{
+  text-align: center;
+}
+.contactDeleteBtn:hover{
+  cursor: pointer;
+}

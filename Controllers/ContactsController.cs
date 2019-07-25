@@ -27,5 +27,19 @@ namespace hawksoft.Controllers
             mContactService.AddContact(data);
             return Ok(); //Todo return validation result
         }
+
+        [HttpPut]
+        public IActionResult UpdateContact([FromBody] Contact data)
+        {
+            mContactService.UpdateContact(data);
+            return Ok(); //Todo return validation result
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteContact([FromRoute] long id)
+        {
+            mContactService.DeleteContact(id);
+            return Ok(); //Todo return validation result
+        }
     }
 }
